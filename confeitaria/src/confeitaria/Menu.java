@@ -3,6 +3,8 @@ package confeitaria;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import confeitaria.model.Bolo;
+import confeitaria.model.Doce;
 import confeitaria.util.Cores;
 
 public class Menu {
@@ -14,7 +16,13 @@ public class Menu {
 		
 		int opcao;
 		
-//		criarProdutosTeste();
+		Bolo bolo1 = new Bolo(1, "Bolo chocolatudo", 1 , 17.00f, 0.5f, 1, "Brigadeiro");
+		Doce doce1 = new Doce(1, "Torta", 2 , 10.00f, 0.2f, 1, "Limão");
+		
+		System.out.println("Bolo criado: " + bolo1.getNome());
+		
+		System.out.println("Doce criado: "+ doce1.getNome());
+		
 		
 		while(true){
 			
@@ -83,6 +91,8 @@ public class Menu {
 					break;
 					
 			}
+			
+			
 		}		
 		
 	}
@@ -99,5 +109,9 @@ public class Menu {
 		System.out.println(Cores.TEXT_RESET + "\n\nPressione Enter para continuar...");
 		input.nextLine();
 	}
+	
+	
+	
+	
 
 }
