@@ -71,7 +71,7 @@ public abstract class Produtos {
 			System.out.printf("Id do produto %d%n", this.id);
 			System.out.printf("Nome do produto: %s%n", this.nome);
 			System.out.printf("categoria do produto: %s%n", categoria);
-			System.out.printf("Peso do produto: %.2f%n", this.peso);
+			System.out.printf("Peso do produto: %.3f%n", this.peso);
 			System.out.printf("Preço do produto: %.2f%n", this.preco);
 		}
 	
